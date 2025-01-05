@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^3.0.3"
   }
 }
