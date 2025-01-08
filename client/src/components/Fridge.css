@@ -1,0 +1,197 @@
+.fridge-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.fridge-content {
+    display: grid;
+    gap: 24px;
+}
+
+.add-ingredient-section {
+    margin-bottom: 24px;
+}
+
+.add-item-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.ingredient-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.ingredient-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.add-button {
+    padding: 12px 24px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover:not(:disabled) {
+    background: #45a049;
+}
+
+.add-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.common-ingredients {
+    margin-top: 20px;
+}
+
+.ingredient-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.ingredient-chip {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ingredient-chip:hover:not(:disabled) {
+    background: #e0e0e0;
+}
+
+.current-ingredients {
+    margin-top: 20px;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.ingredient-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.ingredient-item:hover {
+    transform: translateY(-2px);
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #ff5252;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.remove-button:hover:not(:disabled) {
+    background: #ffebee;
+}
+
+.error-message {
+    color: #ff5252;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+h2, h3 {
+    color: #333;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.quantity-inputs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 80px;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.unit-select {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.quantity {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 4px;
+} 
